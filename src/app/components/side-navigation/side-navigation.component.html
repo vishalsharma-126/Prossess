@@ -1,0 +1,33 @@
+<div class="sidebar">
+        <ul class='nav nav-pills nav-stacked '>
+            <li class='nav-item active disabled' *ngIf="data.dataUnit?.length" [attr.role]="presentation">
+                
+                <a class='nav-link'> Production Unit </a>
+            </li>
+            <li class='nav-item' *ngFor="let item of data.dataUnit; let i = index" [value]="item.value"
+                (click)='onSideNavClick(item)'>
+                <a [routerLink]="item.route" class='nav-link'> {{item.name}} </a>
+            </li>
+
+
+            <li class='nav-item active disabled'>
+                
+                <a class='nav-link'> Common Applications </a>
+
+            </li>
+            <li class='nav-item' *ngFor="let item of data.commonApplication; let i = index" [value]="item.value"
+                (click)='onSideNavClick(item)'>
+                <a [routerLink]="item.route" class='nav-link'> {{item.name}} </a>
+            </li>
+        </ul>
+</div>
+
+
+
+
+
+
+<router-outlet></router-outlet>
+
+
+

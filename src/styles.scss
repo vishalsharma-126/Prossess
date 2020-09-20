@@ -1,0 +1,36 @@
+/* You can add global styles to this file, and also import other style files */
+@import "../src/assets/css/scania-bootstrap.scss";
+
+
+
+ul.nav.nav-pills li + li {
+    margin: 0;
+}
+
+ul.nav.nav-pills.nav-stacked {
+   // margin-top: 30px;
+}
+
+li[role=presentation] {
+    background-color: rgb(3, 58, 106) !important;
+    line-height: 1px;
+    font-size: 14px; 
+    a {
+        color: #fff !important;
+    }
+    color: #fff;
+}
+
+.container-fluid {
+    margin: 0px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.disabled {
+    pointer-events: none;
+}
+
+
+
+

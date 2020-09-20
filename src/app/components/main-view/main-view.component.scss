@@ -1,0 +1,30 @@
+#mainView {
+    float: right;
+    width: 74%;
+    margin-right: 5px;
+    h1 {
+        font-size: 29px;
+        border-bottom: 1px solid grey;
+        padding-bottom: 15px;
+        background-color: #e4e4e4;
+    }
+    ul {
+        display: flex;
+        li {
+            list-style-type: none;
+        }
+    }
+   
+    .imageContainer {    
+        width: 100px;
+        height: 100px;
+        position: relative;
+        border-radius: 50%;
+        background-color: hotpink;
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+

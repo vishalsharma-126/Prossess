@@ -1,0 +1,16 @@
+<div id="mainView" *ngIf="mainViewData">
+
+    <h1 class="page-header">{{mainViewData.name}}</h1>
+
+    <ul class='content'>
+
+        <li *ngFor="let item of mainViewData.module; let i = index" >
+            <div class= "imageContainer">
+                <img [src]="item.img">
+            </div>
+            
+            <label>{{item.name}}</label>
+        </li>
+       
+    </ul>
+</div>
