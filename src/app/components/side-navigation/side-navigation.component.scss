@@ -17,6 +17,7 @@
         height: 50px;
         margin: 0 !important;
         border-top: 0px;
+        cursor: pointer;
         &:first-child {
             border-top: 1px;
             
@@ -33,6 +34,9 @@
            
         }
         
+    }
+    li.highlighted {
+        background-color: lightgrey;
     }
 }
 .sidebar {

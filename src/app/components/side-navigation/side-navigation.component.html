@@ -5,8 +5,9 @@
                 <a class='nav-link'> Production Unit </a>
             </li>
             <li class='nav-item' *ngFor="let item of data.dataUnit; let i = index" [value]="item.value"
-                (click)='onSideNavClick(item)'>
-                <a [routerLink]="item.route" class='nav-link'> {{item.name}} </a>
+            [ngClass]="{'highlighted': selectedItem === i}"
+                (click)='selectedItem = i; onSideNavClick(item)'>
+                <a class='nav-link'> {{item.name}} </a>
             </li>
 
 

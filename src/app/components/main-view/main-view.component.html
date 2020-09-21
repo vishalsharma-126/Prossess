@@ -4,12 +4,13 @@
 
     <ul class='content'>
 
-        <li *ngFor="let item of mainViewData.module; let i = index" >
+        <li *ngFor="let item of mainViewData.module; let i = index" (click)="onImageClick(item)">
             <div class= "imageContainer">
                 <img [src]="item.img">
             </div>
             
             <label>{{item.name}}</label>
+            
         </li>
        
     </ul>
