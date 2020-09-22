@@ -1,0 +1,17 @@
+#welcomePage {  
+
+    .banner {
+        height: 500px;
+        background: url("../../../assets/images/prelaunch_banner.jpg") no-repeat;
+        background-size: cover;
+    }
+    .infoSection {
+        position: absolute;
+        left: 50px;
+        top: 50%;
+        color: white;
+        h2 {
+            color: inherit;
+        }
+    }
+}

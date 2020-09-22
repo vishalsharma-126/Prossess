@@ -13,7 +13,7 @@ export class ProductionSeuComponent implements OnInit {
         name: 'Chassis Truck & Bus (Södertälje)',
         module: [
           {
-            name: "Truck",
+            name: "TRUCK",
             description: "Chassis Truck Södertälje",
             database: "ROXEN",
             url: "http://prossessprodse.scania.com/forms/frmservlet?",
@@ -22,7 +22,7 @@ export class ProductionSeuComponent implements OnInit {
             
           },
           {
-            name: "Bus",
+            name: "BUS",
             description: "Chassis Bus Södertälje",
             database: "BOREN",
             url: "http://prossessprodse.scania.com/forms/frmservlet?",
@@ -37,10 +37,11 @@ export class ProductionSeuComponent implements OnInit {
         module: [
 
           {
-            name: "Truck",
+            name: "TRUCK",
             description: "Chassis Truck Angers",
             database: "NANCY",
             url: "http://prossessprodse.scania.com/forms/frmservlet?",
+            img: "../../../assets/images/scania_truck.png",
             version: "Release: 2020.2",
             
           },
@@ -51,10 +52,11 @@ export class ProductionSeuComponent implements OnInit {
         module: [
 
           {
-            name: "Truck",
+            name: "TRUCK",
             description: "Truck Chassis Zwolle",
             database: "ASSEN",
             url: "http://prossessprodse.scania.com/forms/frmservlet?",
+            img: "../../../assets/images/scania_truck.png",
             version: "Release: 2020.2",
             
           },
@@ -67,10 +69,11 @@ export class ProductionSeuComponent implements OnInit {
         name: 'COM',
         module: [
           {
-            "name": "com",
+            "name": "COM",
             "description": "COM",
             "database": null,
             "url": "http://prossessprodse.scania.com/forms/frmservlet?",
+            img: "../../../assets/images/scania_truck.png",
             "version": "Release: 08.001.02"
             
           }
@@ -80,7 +83,7 @@ export class ProductionSeuComponent implements OnInit {
         name: 'SIAM',
         module: [
           {
-            "name": "siam",
+            "name": "SIAM",
             "description": "SIAM",
             "database": null,
             "url": "http://monadevse.scania.com/forms/frmservlet?",

@@ -12,6 +12,8 @@ import { AcceptanceSeuComponent } from './components/acceptance-seu/acceptance-s
 import { InformationComponent } from './components/information/information.component';
 import { MainViewComponent } from './components/main-view/main-view.component';
 
+import { WelcomePageComponent } from './components/welcome-page/welcome-page.component';
+
 
 @NgModule({
   declarations: [
@@ -23,7 +25,8 @@ import { MainViewComponent } from './components/main-view/main-view.component';
     SideNavigationComponent,
     AcceptanceSeuComponent,
     InformationComponent,
-    MainViewComponent
+    MainViewComponent,
+    WelcomePageComponent
   ],
   imports: [
     BrowserModule,

@@ -13,10 +13,11 @@ export class DevelopmentComponent implements OnInit {
         name: 'Prossess Dev',
         module: [
           {
-            name: "Prossess Development",
+            name: "Development",
             description: "Prossess Development",
             database: "DAVOS",
             url: "http://prossessdevse.scania.com/forms/frmservlet?",
+            img: "../../../assets/images/scania_truck.png",
             version: "Release: 2020.2",
             
           }
@@ -31,10 +32,11 @@ export class DevelopmentComponent implements OnInit {
         name: 'COM',
         module: [
           {
-            "name": "com",
+            "name": "COM",
             "description": "COM",
             "database": null,
             "url": "http://prossessprodse.scania.com/forms/frmservlet?",
+             img: "../../../assets/images/scania_truck.png",
             "version": "Release: 08.001.02"
             
           }
@@ -44,10 +46,11 @@ export class DevelopmentComponent implements OnInit {
         name: 'SIAM',
         module: [
           {
-            "name": "siam",
+            "name": "SIAM",
             "description": "SIAM",
             "database": null,
             "url": "http://monadevse.scania.com/forms/frmservlet?",
+             img: "../../../assets/images/scania_truck.png",
             "version": "Release: 08.001.02"
            
           }

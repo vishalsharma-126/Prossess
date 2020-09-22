@@ -13,18 +13,20 @@ export class AcceptanceSeuComponent implements OnInit {
         name: 'Chassis Truck & Bus (Södertälje)',
         module: [
           {
-            name: "Prossess Truck",
+            name: "TRUCK",
             description: "Chassis Truck Södertälje",
             database: "ROXAS",
             url: "http://prossessprodse.scania.com/forms/frmservlet?",
+            img: "../../../assets/images/scania_truck.png",
             version: "Release: 2020.2",
             
           },
           {
-            name: "Prossess Bus",
+            name: "BUS",
             description: "Chassis Bus Södertälje",
             database: "BOGRA",
             url: "http://prossesstestse.scania.com/forms/frmservlet?",
+            img: "../../../assets/images/scania_bus.jpg",
             version: "Release: 2020.2",
             
           }
@@ -35,10 +37,11 @@ export class AcceptanceSeuComponent implements OnInit {
         module: [
 
           {
-            name: "truck Angers",
+            name: "TRUCK",
             description: "Chassis Truck Angers",
             database: "NAMUR",
             url: "http://prossessprodse.scania.com/forms/frmservlet?",
+            img: "../../../assets/images/scania_truck.png",
             version: "Release: 2020.2",
             
           },
@@ -49,10 +52,11 @@ export class AcceptanceSeuComponent implements OnInit {
         module: [
 
           {
-            name: "truck Zwolle",
+            name: "TRUCK",
             description: "Truck Chassis Zwolle",
             database: "ASAKA",
             url: "http://prossesstestse.scania.com/forms/frmservlet?",
+            img: "../../../assets/images/scania_truck.png",
             version: "Release: 2020.2",
             
           },
@@ -65,10 +69,11 @@ export class AcceptanceSeuComponent implements OnInit {
         name: 'COM',
         module: [
           {
-            "name": "com",
+            "name": "COM",
             "description": "COM",
             "database": null,
             "url": "http://prossesstestse.scania.com/forms/frmservlet?config=com8000",
+            img: "../../../assets/images/scania_bus.jpg",
             "version": "Release: 08.001.02"
             
           }
@@ -78,10 +83,11 @@ export class AcceptanceSeuComponent implements OnInit {
         name: 'SIAM',
         module: [
           {
-            "name": "siam",
+            "name": "SIAM",
             "description": "SIAM",
             "database": null,
             "url": "http://prossesstestse.scania.com/forms/frmservlet?config=siam8000",
+            img: "../../../assets/images/scania_bus.jpg",
             "version": "Release: 08.001.02"
            
           }

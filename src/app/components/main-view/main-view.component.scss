@@ -13,25 +13,19 @@
     ul {
         display: inline-flex;
         padding-left: 0px;
+       
         li {
-            list-style-type: none;
-            width: 100px;
-            height: 100px;
-            margin-left: 100px;
-            margin-right: 100px;
+            list-style-type: none;           
+            margin: 100px;
+            margin-top: 20px;
             cursor: pointer;
-           // transition: width 0.5s, height 0.5s;
             &:first-child {
-                margin-left: 0px;
-                
+                margin-left: 0px;                
             }
             &:last-child {
+                margin-left: 0px;
                 margin-right: 0px;
-            }
-           /* &:hover {
-                height: 200px;
-                width: 200px;
-            }*/
+            }           
 
             label {
                 margin-top: 15px;
@@ -43,11 +37,19 @@
     .imageContainer {    
         width: 100px;
         height: 100px;
+        margin: 0 auto;
+        display: block;
         position: relative;
         border-radius: 50%;
         background-color: #e6e1e5;
-        @include alignImageCenter;
+        transition: transform .2s; /* Animation */
+        &:hover {
+            transform: scale(1.5); 
+        }
         img {
+            position: absolute;
+            left: 12.5%;
+            top: 12.5%;
             border-radius: 50%;
             width: 75%;
             height: 75%;
