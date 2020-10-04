@@ -1,7 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
 @import "../src/assets/css/scania-bootstrap.scss";
 
-
+body {
+    overflow: hidden;
+}
 
 ul.nav.nav-pills li + li {
     margin: 0;
@@ -30,6 +32,36 @@ li[role=presentation] {
 .disabled {
     pointer-events: none;
 }
+
+app-root {
+    width: 100%;
+    height: 100%;
+}
+
+.main-nav {
+    height: 100%;
+} 
+.mainContent {
+    margin-left: 4px;
+    margin-right: 5px;
+    height: calc(100% - 245px); // 120px footer height + 41 nav + 64 header
+}
+
+.footer {
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    height: 120px;
+    background-color: #000000;
+    .banner {
+      background: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNi4wLjMsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB3aWR0aD0iNTY2LjkzcHgiIGhlaWdodD0iOTMuNzU0cHgiIHZpZXdCb3g9IjAgMCA1NjYuOTMgOTMuNzU0IiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCA1NjYuOTMgOTMuNzU0IiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxwYXRoIGZpbGw9IiNGRkZGRkYiIGQ9Ik0yNjQuNTg4LDU0LjY2M2gtMjMuNzc0bDExLjg4NS0zMS4wMUwyNjQuNTg4LDU0LjY2M3ogTTM3NS43NDksODkuODI5aDM3LjVWMy44MDRoLTMyLjIzNnY0NS4zNA0KCWwtMzMuOTQ2LTQ1LjM0aC00MC44MVY3My45NWwtMjcuMDgtNzAuMTQ2aC01Mi4zMzNsLTE5LjYyOSw1MC44NTloLTMxLjk2N2MtMS41OTMsMTAuMTY2LTcuNDc3LDE1LjU1Ny0xNy43NywxNS41NTcNCgljLTExLjg5LDAtMTguNTExLTkuMTg4LTE4LjUxMS0yMy40MDNjMC0xNC4yMTMsNi43NDgtMjMuMjg2LDE4LjUxMS0yMy4yODZjOS42ODQsMCwxNS45MjksNS4xNTEsMTcuMjgsMTMuNDg2aDM1LjQxOXYtMi4zMzQNCglDMjEwLjE3OSwxNS42ODgsMTkzLjc0OSwwLDE1Ny44NDYsMGMtMzguNzI5LDAtNTMuNDM3LDE5LjM2NS01My40MzcsNDYuODE2YzAsMC42MjksMC4wMiwxLjI1LDAuMDMzLDEuODc1DQoJYy00Ljg1Ny01LjkwOC0xNC4xOC05LjM1MS0yOS41NjQtMTEuNTU4bC0yMi40MjYtMy4xODhjLTguNDU3LTEuMjIxLTEzLjcyNy0yLjE5Ny0xMy43MjctNi4zNjdjMC0zLjU1NSwzLjMwNy03LjM1OCwxMi41MDUtNy4zNTgNCgljMTAuMTcxLDAsMTUuODEyLDMuOTI2LDE1LjgxMiwxMC4yOThoMzYuMDI0di0xLjgzNmMwLTE3LjE2My0xNy4xNTctMjguNDM4LTUwLjg2My0yOC40MzhjLTM0LjY3NCwwLTQ5Ljg3OCwxMi42MjctNDkuODc4LDMwLjM5Ng0KCWMwLDEzLjg0OCw5LjA2NiwyMS45MzgsMzAuMzkxLDI0Ljg4MmwyNS4zNzEsMy41NDVjOS4wNjYsMS4yMjksMTIuMDEyLDMuMDY1LDEyLjAxMiw2Ljg2NWMwLDQuOTAxLTQuNjU4LDcuNjA2LTE1LjA3OCw3LjYwNg0KCWMtMTEuNzYzLDAtMTcuMTQ3LTUuMDI5LTE3LjE0Ny0xMi4wMTNIMHYxLjk2NGMwLDE5LjExLDE4LjAxMywzMC4xMzcsNTMuNDMzLDMwLjEzN2MzMi43MjksMCw1MS43MDQtNy4yMjgsNTQuODE0LTI1LjQ4Nw0KCWM2LjU0OCwxNS42NzQsMjEuOTQ3LDI1LjYxNCw0OS41OTksMjUuNjE0YzIwLjk3MiwwLDMyLjczOS01LjcxMywzOS44MDQtMTQuMzI1bC00LjAxMywxMC4zOTloMzMuNjk2bDQuNzc5LTEyLjM3M2g0MS4xNzcNCglsNC43NzksMTIuMzczaDI4LjE4OGg2LjEyM2gyNi4xMTNWNDAuMzE3TDM3NS43NDksODkuODI5eiBNNTE5LjEyNyw1NC42NjNoLTIzLjc3MWwxMS44ODUtMzEuMDFMNTE5LjEyNyw1NC42NjN6IE01NjYuOTMsODkuODI5DQoJTDUzMy43MTcsMy44MDRoLTUyLjMzNEw0NTQuMzA0LDczLjk1VjMuNzk0aC0zMi45Njl2ODYuMDM1aDI2LjgzNmg2LjEzM2gyNy41NjZsNC43NzUtMTIuMzczaDQxLjE4Mmw0Ljc4NSwxMi4zNzNINTY2LjkzeiIvPg0KPC9zdmc+DQo=");
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-position: center;
+      background-size: auto;
+    }
+  }
+
 
 
 

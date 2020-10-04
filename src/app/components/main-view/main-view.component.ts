@@ -21,12 +21,15 @@ export class MainViewComponent implements OnInit {
   }
 
   onImageClick = (item: any) => {
-      window.open(item.url, "_blank",  `toolbar=no,
+    // opens in new window
+      /*window.open(item.url, "_blank",  `toolbar=no, 
       location=no,
       status=no,
       menubar=no,
       scrollbars=yes,
-      resizable=yes`)
+      resizable=yes`)*/
+
+    window.open(item.url, "_blank")
   }
 
 }

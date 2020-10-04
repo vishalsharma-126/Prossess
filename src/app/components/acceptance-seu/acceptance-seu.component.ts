@@ -13,19 +13,19 @@ export class AcceptanceSeuComponent implements OnInit {
         name: 'Chassis Truck & Bus (Södertälje)',
         module: [
           {
-            name: "TRUCK",
+            name: "TRUCK - ACC",
             description: "Chassis Truck Södertälje",
             database: "ROXAS",
-            url: "http://prossessprodse.scania.com/forms/frmservlet?",
+            url: "sfstarter:http://prossesstestse.scania.com/forms/frmservlet?config=pros&userid=@ROXAS[!]PROSSESS_FRMSAL_ACC_SEU",
             img: "../../../assets/images/scania_truck.png",
             version: "Release: 2020.2",
             
           },
           {
-            name: "BUS",
+            name: "BUS - ACC",
             description: "Chassis Bus Södertälje",
             database: "BOGRA",
-            url: "http://prossesstestse.scania.com/forms/frmservlet?",
+            url: "sfstarter:http://prossesstestse.scania.com/forms/frmservlet?config=pros&userid=@BOGRA[!]PROSSESS_FRMSAL_ACC_SEU",
             img: "../../../assets/images/scania_bus.jpg",
             version: "Release: 2020.2",
             
@@ -37,10 +37,10 @@ export class AcceptanceSeuComponent implements OnInit {
         module: [
 
           {
-            name: "TRUCK",
+            name: "TRUCK - ACC",
             description: "Chassis Truck Angers",
             database: "NAMUR",
-            url: "http://prossessprodse.scania.com/forms/frmservlet?",
+            url: "sfstarter:http://prossesstestse.scania.com/forms/frmservlet?config=pros&userid=@NAMUR[!]PROSSESS_FRMSAL_ACC_SEU",
             img: "../../../assets/images/scania_truck.png",
             version: "Release: 2020.2",
             
@@ -52,10 +52,10 @@ export class AcceptanceSeuComponent implements OnInit {
         module: [
 
           {
-            name: "TRUCK",
+            name: "TRUCK - ACC",
             description: "Truck Chassis Zwolle",
             database: "ASAKA",
-            url: "http://prossesstestse.scania.com/forms/frmservlet?",
+            url: "sfstarter:http://prossesstestse.scania.com/forms/frmservlet?config=pros&userid=@ASAKA[!]PROSSESS_FRMSAL_ACC_SEU",
             img: "../../../assets/images/scania_truck.png",
             version: "Release: 2020.2",
             
@@ -73,7 +73,7 @@ export class AcceptanceSeuComponent implements OnInit {
             "description": "COM",
             "database": null,
             "url": "http://prossesstestse.scania.com/forms/frmservlet?config=com8000",
-            img: "../../../assets/images/scania_bus.jpg",
+            img: "../../../assets/images/com.JPG",
             "version": "Release: 08.001.02"
             
           }
@@ -87,7 +87,7 @@ export class AcceptanceSeuComponent implements OnInit {
             "description": "SIAM",
             "database": null,
             "url": "http://prossesstestse.scania.com/forms/frmservlet?config=siam8000",
-            img: "../../../assets/images/scania_bus.jpg",
+            img: "../../../assets/images/siam.JPG",
             "version": "Release: 08.001.02"
            
           }

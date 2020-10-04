@@ -16,7 +16,7 @@ export class DevelopmentComponent implements OnInit {
             name: "Development",
             description: "Prossess Development",
             database: "DAVOS",
-            url: "http://prossessdevse.scania.com/forms/frmservlet?",
+            url: "sfstarter:http://prossessdevse.scania.com/forms/frmservlet?config=pros&userid=@DAVOS[!]PROSSESS_FRMSAL_DEV_SEU",
             img: "../../../assets/images/scania_truck.png",
             version: "Release: 2020.2",
             
@@ -25,8 +25,7 @@ export class DevelopmentComponent implements OnInit {
       },
      
     ],
-    name:'vishal',
-    
+
     "commonApplication": [
       {
         name: 'COM',
@@ -35,8 +34,8 @@ export class DevelopmentComponent implements OnInit {
             "name": "COM",
             "description": "COM",
             "database": null,
-            "url": "http://prossessprodse.scania.com/forms/frmservlet?",
-             img: "../../../assets/images/scania_truck.png",
+            "url": "sfstarter:http://prossessdevse.scania.com/forms/frmservlet?config=com8000",
+             img: "../../../assets/images/com.JPG",
             "version": "Release: 08.001.02"
             
           }
@@ -50,7 +49,7 @@ export class DevelopmentComponent implements OnInit {
             "description": "SIAM",
             "database": null,
             "url": "http://monadevse.scania.com/forms/frmservlet?",
-             img: "../../../assets/images/scania_truck.png",
+             img: "../../../assets/images/siam.JPG",
             "version": "Release: 08.001.02"
            
           }

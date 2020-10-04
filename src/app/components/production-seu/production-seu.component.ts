@@ -13,19 +13,19 @@ export class ProductionSeuComponent implements OnInit {
         name: 'Chassis Truck & Bus (Södertälje)',
         module: [
           {
-            name: "TRUCK",
+            name: "TRUCK - PROD",
             description: "Chassis Truck Södertälje",
             database: "ROXEN",
-            url: "http://prossessprodse.scania.com/forms/frmservlet?",
+            url: "sfstarter:http://prossessprodse.scania.com/forms/frmservlet?config=pros&userid=@ROXEN[!]PROSSESS_FRMSAL_PRODUCTION_SEU",
             img: "../../../assets/images/scania_truck.png",
             version: "Release: 2020.2",
             
           },
           {
-            name: "BUS",
+            name: "BUS - PROD",
             description: "Chassis Bus Södertälje",
             database: "BOREN",
-            url: "http://prossessprodse.scania.com/forms/frmservlet?",
+            url: "sfstarter:http://prossessprodse.scania.com/forms/frmservlet?config=pros&userid=@BOREN[!]PROSSESS_FRMSAL_PRODUCTION_SEU",
             img: "../../../assets/images/scania_bus.jpg",
             version: "Release: 2020.2",
             
@@ -37,10 +37,10 @@ export class ProductionSeuComponent implements OnInit {
         module: [
 
           {
-            name: "TRUCK",
+            name: "TRUCK - PROD",
             description: "Chassis Truck Angers",
             database: "NANCY",
-            url: "http://prossessprodse.scania.com/forms/frmservlet?",
+            url: "sfstarter:http://prossessprodse.scania.com/forms/frmservlet?config=pros&userid=@NANCY[!]PROSSESS_FRMSAL_PRODUCTION_SEU",
             img: "../../../assets/images/scania_truck.png",
             version: "Release: 2020.2",
             
@@ -52,10 +52,10 @@ export class ProductionSeuComponent implements OnInit {
         module: [
 
           {
-            name: "TRUCK",
+            name: "TRUCK - PROD",
             description: "Truck Chassis Zwolle",
             database: "ASSEN",
-            url: "http://prossessprodse.scania.com/forms/frmservlet?",
+            url: "sfstarter:http://prossessprodse.scania.com/forms/frmservlet?config=pros&userid=@ASSEN[!]PROSSESS_FRMSAL_PROD_SEU",
             img: "../../../assets/images/scania_truck.png",
             version: "Release: 2020.2",
             
@@ -73,7 +73,7 @@ export class ProductionSeuComponent implements OnInit {
             "description": "COM",
             "database": null,
             "url": "http://prossessprodse.scania.com/forms/frmservlet?",
-            img: "../../../assets/images/scania_truck.png",
+            img: "../../../assets/images/com.JPG",
             "version": "Release: 08.001.02"
             
           }
@@ -87,6 +87,7 @@ export class ProductionSeuComponent implements OnInit {
             "description": "SIAM",
             "database": null,
             "url": "http://monadevse.scania.com/forms/frmservlet?",
+            img: "../../../assets/images/siam.JPG",
             "version": "Release: 08.001.02"
            
           }
